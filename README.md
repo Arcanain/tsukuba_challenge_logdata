@@ -14,3 +14,9 @@ rosbag record -a
 ```bash
 rosbag play 生成したファイル名.bag
 ```
+# cartographerによる地図生成
+保存した.bagファイルを再生して地図生成を行うには以下のlaunchファイルを実行する
+
+```bash
+roslaunch cartgrapher_navigation cartographer_rosbag.launch 
+```
